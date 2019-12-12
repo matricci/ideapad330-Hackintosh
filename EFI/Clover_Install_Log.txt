@@ -1,0 +1,40 @@
+
+Clover EFI installer log - Wed Nov 27 02:15:56 -03 2019
+Installer version: v2.5k r5099 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *240.1 GB   disk0
+   1:                        EFI NO NAME                 536.9 MB   disk0s1
+   2:           Linux Filesystem                         239.5 GB   disk0s2
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk1
+   1:                        EFI EFI                     209.7 MB   disk1s1
+   2:                 Apple_APFS Container disk2         999.9 GB   disk1s2
+
+/dev/disk2 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +999.9 GB   disk2
+                                 Physical Store disk1s2
+   1:                APFS Volume Hackintosh - Dados      42.6 GB    disk2s1
+   2:                APFS Volume Preboot                 83.3 MB    disk2s2
+   3:                APFS Volume Recovery                528.5 MB   disk2s3
+   4:                APFS Volume VM                      1.1 GB     disk2s4
+   5:                APFS Volume Hackintosh              10.7 GB    disk2s5
+
+Target volume /Volumes/Hackintosh on disk2 is APFS on physical store disk1s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/Hackintosh/EFIROOTDIR/EFI folder to /Volumes/Hackintosh/EFI-Backups/r5098/2019-11-27-02h15/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
